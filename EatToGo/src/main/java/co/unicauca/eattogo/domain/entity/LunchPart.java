@@ -2,7 +2,6 @@ package co.unicauca.eattogo.domain.entity;
 
 import java.io.Serializable;
 
-import co.unicauca.eattogo.infra.Utilities;
 /**
  * Entidad que representa una parte del almuerzo
  * 
@@ -61,9 +60,7 @@ public class LunchPart implements Serializable {
 	public LunchPart(Long id, Long restaurantId, String name, LunchPartTypeEnum type, DayEnum day, String image) {
 		this.id = id;
 		this.restaurantId = restaurantId;
-		String capitalizeFoodName = Utilities.capitalize(name);
-		this.name = capitalizeFoodName;
-//		this.name = name;
+		this.name = name;
 		this.type = type;
 		this.day = day;
 		this.image = image;

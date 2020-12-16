@@ -12,7 +12,6 @@ import co.unicauca.eattogo.domain.entity.DayEnum;
 import co.unicauca.eattogo.domain.entity.LunchPart;
 import co.unicauca.eattogo.domain.entity.LunchPartTypeEnum;
 import co.unicauca.eattogo.domain.service.ConsumerLunchService;
-import co.unicauca.eattogo.infra.Utilities;
 
 import java.awt.EventQueue;
 
@@ -330,7 +329,7 @@ public class GUIAddMenu extends JInternalFrame implements ActionListener, Intern
 
 		btnRegistrarEntrada = new JButton("Registrar");
 		btnRegistrarEntrada.setIcon(new ImageIcon(
-				"C:\\Users\\Personal\\eclipse-workspace\\Microservicios-Spring-Boot\\Dish-Service\\src\\main\\resources\\templates\\agregar.png"));
+				"src\\main\\resources\\templates\\agregar.png"));
 		btnRegistrarEntrada.setBounds(30, 340, 133, 28);
 		btnRegistrarEntrada.addActionListener(this);
 		btnRegistrarEntrada.setFont(new Font("Tahoma", Font.BOLD, 12));
@@ -369,7 +368,7 @@ public class GUIAddMenu extends JInternalFrame implements ActionListener, Intern
 		btnBorrarEntrada.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnBorrarEntrada.setBounds(305, 341, 122, 28);
 		btnBorrarEntrada.setIcon(new ImageIcon(
-				"C:\\Users\\Personal\\eclipse-workspace\\Microservicios-Spring-Boot\\Dish-Service\\src\\main\\resources\\templates\\remove.png"));
+				"src\\main\\resources\\templates\\remove.png"));
 		panelEntrada.add(btnBorrarEntrada);
 		
 		btnDeshacerEntr = new JButton("Deshacer");
